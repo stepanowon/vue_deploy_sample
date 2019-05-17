@@ -11,11 +11,22 @@
   
 ### 핵심 설정 
 * routertest의 vue.config.js 파일을 검토 (publicPath)
-  - "/gym"
+~~~
+module.exports = {
+    publicPath : "/gym/",
+    productionSourceMap : false,
+}
+~~~
 * package.json의 scripts를 검토(build -> delete target -> copy output)
 * App.vue의 router 객체의 base 속성 검토
 ~~~
-
+const router = new VueRouter({
+  base: "/gym",
+  //mode : "history",
+  routes : [
+    ......
+  ]
+})
 ~~~
   
 ## 실행 방법
