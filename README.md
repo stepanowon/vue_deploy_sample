@@ -14,7 +14,9 @@
   - "/gym"
 * package.json의 scripts를 검토(build -> delete target -> copy output)
 * App.vue의 router 객체의 base 속성 검토
-  - "/gym"
+~~~
+
+~~~
   
 ## 실행 방법
 1. backend 구동
